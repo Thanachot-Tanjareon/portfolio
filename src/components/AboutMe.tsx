@@ -10,7 +10,7 @@ const AboutMe = (): JSX.Element => {
   return(
     <ContentWrapper>
       <Title>About me</Title>
-      <Paragraph>Lorem ipsum dolor sit amet consectetur adipisicing elit. A voluptatum repellendus mollitia, minus consequuntur harum repudiandae nam inventore provident facilis at ratione assumenda tenetur voluptate. Possimus officia facilis laudantium ducimus unde id! Quidem ipsa reiciendis exercitationem. Quis culpa placeat quae excepturi voluptatibus a libero, iste nihil quod eum saepe dolores maxime rem ab quidem nisi obcaecati amet vitae nesciunt atque magni? Animi labore magni dolor blanditiis facilis iusto minima expedita.</Paragraph>
+      <Paragraph>Hi, I'm Thanachot Tanjareon. I'm a full-stack developer and self-taught. I started to learn programming skill since I still learn at grade 9. In start, I started to learning a web develoment basic but the JavaScript isn't easy in starting. And I still learned some skill other as sush as algorithms, Photoshop, video editing and other.</Paragraph>
     </ContentWrapper>
   );
 }

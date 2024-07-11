@@ -16,7 +16,7 @@ const QandA = (): JSX.Element => {
     },
     {
       question: "What's you inspired for learn to write a program?",
-      answer: "hello world!"
+      answer: "when I still learned at grade 8, I want to create something to modify things in the Minecraft."
     },
     {
       question: "Why do you love to write a program?",
@@ -27,9 +27,9 @@ const QandA = (): JSX.Element => {
   return(
     <ContentWrapper>
       <Title>Questions and Answer</Title>
-      {question_and_answer.map((q_and_a: { question: string, answer: string }, index) => {
+      {question_and_answer.map((q_and_a: { question: string, answer: string }, index: number) => {
         return(
-          <QandAContainer>
+          <QandAContainer key={index}>
             <Question>{ q_and_a.question }</Question>
             <Answer>{ q_and_a.answer }</Answer>
           </QandAContainer>

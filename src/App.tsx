@@ -7,9 +7,11 @@ import Hero from "@/components/Hero";
 import AboutMe from "@/components/AboutMe";
 import Skills from "@/components/Skills";
 import ExampleProjects from "@/components/ExampleProjects";
+import Cert from "@/components/Cert";
 import ContactMe from "@/components/ContactMe";
 import QandA from "@/components/QandA";
 import Footer from "@/components/Footer";
+import PortfolioModal from "@/components/PortfolioModal";
 // --- Styled-components. ---
 import { Body } from "@/components/partials/Body";
 import { Container } from "@/components/partials/Container";
@@ -26,6 +28,7 @@ const font = Red_Hat_Display({
 const App = (): JSX.Element => {
     return(
         <Body className={font.className}>
+            {/* (start) main app render */}
             <Container>
                 <Navbar />
                 <Hero />
@@ -33,11 +36,17 @@ const App = (): JSX.Element => {
                     <AboutMe />
                     <Skills />
                     <ExampleProjects />
+                    <Cert />
                     <QandA />
                     <ContactMe />
                 </SubContainer>
                 <Footer />
             </Container>
+            {/* (end) main app render */}
+
+            {/* (start) portfolio modal. */}
+            <PortfolioModal />
+            {/* (end) portfolio modal. */}
         </Body>
     );
 }
