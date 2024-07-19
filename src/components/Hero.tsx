@@ -25,8 +25,8 @@ const Hero = (): JSX.Element => {
 		<Banner>
 			<BannerContainer>
 				<BannerCol>
-					<Heading>Hi, I'm Thanachot Tanjareon.</Heading>
-					<Description>I'm a developer but I'm stil a student now (2024), I loved to learning some things because I want to know some deep story or problem.</Description>
+					<Heading>Hi, I&apos;m Thanachot Tanjareon.</Heading>
+					<Description>I&apos;m a developer but I&apos;m stil a student now (2024), I loved to learning some things because I want to know some deep story or problem.</Description>
 					<HorizontalMenu>
 						<PrimaryLink href='https://linkedin.com/in/thanachot-tanjareon-584564309/'>
 							<LinkedinIcon />

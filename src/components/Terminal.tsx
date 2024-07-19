@@ -34,7 +34,7 @@ const Terminal = (): JSX.Element => {
             <WindowBody>
                 <CodeLine>
                     <span>$</span>
-                    <span>echo "Learning for develope yourself"</span>
+                    <span>echo &quot;Learning for develope yourself&quot;</span>
                     <Cursor
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}

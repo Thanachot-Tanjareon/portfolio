@@ -10,7 +10,7 @@ const AboutMe = (): JSX.Element => {
   return(
     <ContentWrapper>
       <Title>About me</Title>
-      <Paragraph>Hi, I'm Thanachot Tanjareon. I'm a full-stack developer and self-taught. I started to learn programming skill since I still learn at grade 9. In start, I started to learning a web develoment basic but the JavaScript isn't easy in starting. And I still learned some skill other as sush as algorithms, Photoshop, video editing and other.</Paragraph>
+      <Paragraph>Hi, I&apos;m Thanachot Tanjareon. I&apos;m a full-stack developer and self-taught. I started to learn programming skill since I still learn at grade 9. In start, I started to learning a web develoment basic but the JavaScript isn&apos;t easy in starting. And I still learned some skill other as sush as algorithms, Photoshop, video editing and other.</Paragraph>
     </ContentWrapper>
   );
 }
