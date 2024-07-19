@@ -7,8 +7,10 @@ import { Nav } from "@/components/partials/Nav";
 import { NavContainer } from "@/components/partials/Nav/NavContainer";
 import { Logo } from "@/components/partials/Logo";
 import { HorizontalMenu } from "@/components/partials/menu/HorizontalMenu";
-import { DropdownWrapper } from "@/components/partials/DropdownWrapper";
 import { IconButton } from "@/components/partials/button/IconButton";
+// --- management state on web page. ---
+import { useAppDispatch } from "@/store/hooks";
+import { openModal } from "@/store/slices/modal";
 
 
 const font = Pixelify_Sans({
@@ -18,20 +20,25 @@ const font = Pixelify_Sans({
 });
 
 const Navbar = (): JSX.Element => {
-    return(
-        <Nav>
-            <NavContainer>
-                <Logo href='/' className={font.className}>Thanachot Tanjareon</Logo>
-                <HorizontalMenu>
-                    <DropdownWrapper>
-                        <IconButton>
-                            <FaTh />
-                        </IconButton>
-                    </DropdownWrapper>
-                </HorizontalMenu>
-            </NavContainer>
-        </Nav>
-    );
+	const dispatch = useAppDispatch();
+
+	const handleOpenModal = () => {
+		dispatch(openModal());
+		return;
+	}
+
+	return(
+		<Nav>
+			<NavContainer>
+				<Logo href='/' className={font.className}>Thanachot Tanjareon</Logo>
+				<HorizontalMenu>
+					<IconButton onClick={handleOpenModal}>
+						<FaTh />
+					</IconButton>
+				</HorizontalMenu>
+			</NavContainer>
+		</Nav>
+	);
 }
 
 export default Navbar;

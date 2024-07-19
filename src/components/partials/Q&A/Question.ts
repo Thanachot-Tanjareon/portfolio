@@ -9,6 +9,10 @@ const Question = styled('h4')(() => {
     line-height: 20px;
     text-shadow: 0 0 14px rgb(160, 172, 222, 0.72);
     padding: 8px 18px;
+
+    @media screen and (max-width: 480px) {
+      padding: 12px 10px;
+    }
   `;
 });
 

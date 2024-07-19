@@ -9,6 +9,10 @@ const Answer = styled('p')(() => {
     text-align: justify;
     width: calc(100% - 62px);
     margin: 10px auto 0;
+
+    @media screen and (max-width: 480px) {
+      width: calc(100% - 36px);
+    }
   `;
 });
 

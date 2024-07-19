@@ -16,12 +16,12 @@ const IconButtonOverlay = styled('button')(() => {
     transition: all 60ms ease;
     position: absolute;
     top: 22px;
-    right: 70px; 
+    right: 32px;
 
     & svg {
-        color: rgb(255, 255, 255);
-        width: 24px;
-        height: 24px;
+      color: rgb(255, 255, 255);
+      width: 24px;
+      height: 24px;
     }
 
     &:hover {

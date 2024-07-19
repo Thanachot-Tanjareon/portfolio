@@ -9,6 +9,11 @@ const PortfolioModalWrapper = styled('div')(() => {
     width: calc(100% - 240px);
     height: calc(100% - 74px);
     overflow: hidden;
+
+    @media screen and (max-width: 540px) {
+      width: calc(100% - 40px);
+      height: calc(100% - 142px);
+    }
   `;
 });
 

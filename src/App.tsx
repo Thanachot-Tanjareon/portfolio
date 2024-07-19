@@ -16,6 +16,9 @@ import PortfolioModal from "@/components/PortfolioModal";
 import { Body } from "@/components/partials/Body";
 import { Container } from "@/components/partials/Container";
 import { SubContainer } from "@/components/partials/SubContainer";
+// --- management state on web page. ---
+import { useAppSelector } from "@/store/hooks";
+import { getPropertyStateModal } from "@/store/slices/modal";
 
 
 const font = Red_Hat_Display({
@@ -26,29 +29,31 @@ const font = Red_Hat_Display({
 });
 
 const App = (): JSX.Element => {
-    return(
-        <Body className={font.className}>
-            {/* (start) main app render */}
-            <Container>
-                <Navbar />
-                <Hero />
-                <SubContainer>
-                    <AboutMe />
-                    <Skills />
-                    <ExampleProjects />
-                    <Cert />
-                    <QandA />
-                    <ContactMe />
-                </SubContainer>
-                <Footer />
-            </Container>
-            {/* (end) main app render */}
+	const { isOpenModal } = useAppSelector(getPropertyStateModal);
 
-            {/* (start) portfolio modal. */}
-            <PortfolioModal />
-            {/* (end) portfolio modal. */}
-        </Body>
-    );
+	return(
+		<Body className={font.className}>
+			{/* (start) main app render */}
+			<Container>
+				<Navbar />
+				<Hero />
+				<SubContainer>
+					<AboutMe />
+					<Skills />
+					<ExampleProjects />
+					<Cert />
+					<QandA />
+					<ContactMe />
+				</SubContainer>
+				<Footer />
+			</Container>
+			{/* (end) main app render */}
+
+			{/* (start) portfolio modal. */}
+			{isOpenModal? <PortfolioModal />: null}
+			{/* (end) portfolio modal. */}
+		</Body>
+	);
 }
 
 export default App;

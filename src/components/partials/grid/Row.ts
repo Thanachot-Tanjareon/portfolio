@@ -15,6 +15,13 @@ const Row = styled('div')<Props>((props) => {
     justify-content: center;
     margin: 6px 0;
     column-gap: 10px;
+
+    @media screen and (max-width: 540px) {
+      margin: 12px 0;
+      grid-template-columns: repeat(2, 160px);
+      row-gap: 12px;
+      column-gap: 8px;
+    }
   `;
 });
 
